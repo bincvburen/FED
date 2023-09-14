@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.apple.com/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/detail.png" width="375px" alt="omschrijving van de pagina">
+  Detail pagina iPhone 14
+  <img src="readme-images/detail.png" width="375px" alt="Detail pagina van de iPhone 14">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/hoofd.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/hoofd." width="375px" alt="Home pagina van Apple">
  
 </details>
 
@@ -58,6 +58,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  De website van Apple bevat best veel beeldspraak, en bepaalde metaforen. Dit zou voor sommige mensen als vervelend kunnen worden ervaren. Ook worden vele headings en paragraven op verschillende manieren gestijld, en zit er soms geen zelfde stijl in. Veel media speelt automatisch af en er is spraak van veel bewegende elementen. Er is geen mogelijkheid om de beweging te verminderen. Verder worden contrasten goed toegepast en is alles duidelijk te lezen. De wesbite is zeer responsive en past zich aan voor vele apparaten en rotaties. 
+
 </details>
 
 
@@ -69,12 +71,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -88,17 +84,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Tot nu toe gaat het me best goed af met coderen. Ik moest het een en ander even opfrissen, maar als ik de oefeningen doe en naar oudere projecten kijk, kom ik er vaak uit. Momenteel zoek ik uitdaging in de responsiveheid en ben ik aan de slag gegaan met Javascript, om de website wat dyanmischer te maken.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Binc
+
+Jan
+
+Sara
+
+Yasin
+
+Esra
 
 
   ### Verslag van meeting
