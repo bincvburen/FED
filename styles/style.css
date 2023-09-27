@@ -13,13 +13,10 @@
 
 
 
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
+/* //////////////////////////
+	VARIABELEN 
+////////////////////////// */
 :root {
-	/* startje */
 	--color-text: #111;
 	--color-background: #eee;
 	--ip-middernacht: #31353A;
@@ -43,11 +40,9 @@
 
 
 
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
+/* //////////////////////////
+	KOPTEKSTEN 
+////////////////////////// */
 
 @font-face {
 	font-family: 'Regular';
@@ -58,8 +53,6 @@
 	font-family: 'Display';
 	src: url('../assets/fonts/SF-Pro-Display-Medium.otf');
 }
-
-/* KOPTEKSTEN */
 
 p {
 	font-family: 'Regular';
@@ -83,7 +76,9 @@ h3 {
 	text-align: center;
 }
 
-/* NAV */
+/* //////////////////////////
+	NAVIGATIE 
+////////////////////////// */
 
 /* header {
 	position: relative;
@@ -160,7 +155,9 @@ header {
 	top: 0em;
 }
 
-/* NAV INDEX  */
+/* //////////////////////////
+	NAVIGATIE - HOME AANPASSINGEN
+////////////////////////// */
 
 .home header nav {
 	background-color: black;
@@ -173,9 +170,6 @@ header {
 .home header nav section img {
 	filter: brightness(0) invert(1);
 }
-
-
-
 
 nav:nth-of-type(2) a p {
 	color: white;
@@ -212,18 +206,31 @@ main>div:first-of-type {
 		justify-content: flex-end;
 		margin: 0em 1em;
 	}
-	
+
 
 	nav section:first-of-type img:nth-of-type(2) {
 		margin-left: auto;
 	}
 }
 
+@media screen and (min-width: 1200px) {
+
+	nav section img:nth-last-of-type(1) {
+		display: none;
+	}
+
+}
+
 main>div:first-of-type a {
 	color: #0071e3;
 }
 
-/* BLOK 1 VOL VERWONDERING */
+
+
+
+/* //////////////////////////
+	VOL VERWONDERING 
+////////////////////////// */
 
 main>section:nth-of-type(1) h2 {
 	text-align: center;
@@ -247,15 +254,14 @@ main section:nth-of-type(1) article {
 	background-size: 400%;
 	background-repeat: no-repeat;
 	background-position: 30% -20%;
-	/* margin-top: 25em; */
 	transition: background-position 1s ease-in-out;
-	
-
 }
 
 
 
-/* KLEURKEUZE */
+/* //////////////////////////
+	KIES EEN KLEUR 
+////////////////////////// */
 
 main section:nth-of-type(1) nav {
 	display: flex;
@@ -301,11 +307,9 @@ main section:nth-of-type(1) nav button:nth-of-type(5) {
 
 main section:nth-of-type(1) nav button:nth-of-type(6) {
 	border: 1em solid var(--ip-geel);
-	/* outline: 3px solid #0071e3; */
 }
 
 main>section:nth-of-type(2) {
-	/* background-color: red; */
 	box-shadow: 0 -6em 3em -4em rgba(0, 0, 0, 0.1);
 }
 
@@ -314,80 +318,82 @@ main section:nth-of-type(1) nav button:nth-of-type(1):hover {
 	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
 	animation-direction: alternate;
-	}
-	
-	@keyframes button-shadow-zwart {
-		50% {
-			box-shadow: 0em 0em 1em var(--ip-middernacht-donker)
-		}
-	}
+}
 
-	main section:nth-of-type(1) nav button:nth-of-type(2):hover {
+@keyframes button-shadow-zwart {
+	50% {
+		box-shadow: 0em 0em 1em var(--ip-middernacht-donker)
+	}
+}
+
+main section:nth-of-type(1) nav button:nth-of-type(2):hover {
 	animation-name: button-shadow-sterrenlicht;
 	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
 	animation-direction: alternate;
-	}
-	
-	@keyframes button-shadow-sterrenlicht {
-		50% {
-			box-shadow: 0em 0em 1em var(--ip-sterrenlicht-donker)
-		}
-	}
+}
 
-	main section:nth-of-type(1) nav button:nth-of-type(3):hover {
+@keyframes button-shadow-sterrenlicht {
+	50% {
+		box-shadow: 0em 0em 1em var(--ip-sterrenlicht-donker)
+	}
+}
+
+main section:nth-of-type(1) nav button:nth-of-type(3):hover {
 	animation-name: button-shadow-rood;
 	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
 	animation-direction: alternate;
-	}
-	
-	@keyframes button-shadow-rood {
-		50% {
-			box-shadow: 0em 0em 1em var(--ip-rood-donker)
-		}
-	}
+}
 
-	main section:nth-of-type(1) nav button:nth-of-type(4):hover {
+@keyframes button-shadow-rood {
+	50% {
+		box-shadow: 0em 0em 1em var(--ip-rood-donker)
+	}
+}
+
+main section:nth-of-type(1) nav button:nth-of-type(4):hover {
 	animation-name: button-shadow-blauw;
 	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
 	animation-direction: alternate;
-	}
-	
-	@keyframes button-shadow-blauw {
-		50% {
-			box-shadow: 0em 0em 1em var(--ip-blauw-donker);
-		}
-	}
+}
 
-	main section:nth-of-type(1) nav button:nth-of-type(5):hover {
-		animation-name: button-shadow-paars;
-		animation-duration: 1s;
-		animation-timing-function: ease-in-out;
-		animation-direction: alternate;
-		}
-		
-		@keyframes button-shadow-paars {
-			50% {
-				box-shadow: 0em 0em 1em var(--ip-paars-donker)
-			}
-		}
-	
-		main section:nth-of-type(1) nav button:nth-of-type(6):hover {
+@keyframes button-shadow-blauw {
+	50% {
+		box-shadow: 0em 0em 1em var(--ip-blauw-donker);
+	}
+}
+
+main section:nth-of-type(1) nav button:nth-of-type(5):hover {
+	animation-name: button-shadow-paars;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+@keyframes button-shadow-paars {
+	50% {
+		box-shadow: 0em 0em 1em var(--ip-paars-donker)
+	}
+}
+
+main section:nth-of-type(1) nav button:nth-of-type(6):hover {
 	animation-name: button-shadow-geel;
 	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
 	animation-direction: alternate;
-	}
-	
-	@keyframes button-shadow-geel {
-		50% {
-			box-shadow: 0em 0em 1em var(--ip-geel-donker)
-		}
-	}
+}
 
-/* KOOP IPHONE */
+@keyframes button-shadow-geel {
+	50% {
+		box-shadow: 0em 0em 1em var(--ip-geel-donker)
+	}
+}
+
+/* //////////////////////////
+	KOOP IPHONE 
+////////////////////////// */
 
 section:nth-of-type(2) h2 {
 	text-align: center;
@@ -416,7 +422,9 @@ main>section:nth-of-type(2) a p {
 	margin-bottom: 3em;
 }
 
-/* GRID EN FEATURES*/
+/* //////////////////////////
+	GRID 
+////////////////////////// */
 
 main section:nth-of-type(3),
 main section:nth-of-type(4),
@@ -436,7 +444,34 @@ section:nth-of-type(3) article {
 	border-radius: 1.5em;
 }
 
-/* GRID AANPASSINGEN*/
+section:nth-of-type(3) article:hover,
+section:nth-of-type(4) article:hover,
+section:nth-of-type(5) article:hover {
+	scale: 0.975;
+	transition: scale 0.2s ease-in-out;
+}
+
+section:nth-of-type(3) article,
+section:nth-of-type(4) article,
+section:nth-of-type(5) article {
+	transition: scale 0.2s ease-in-out;
+}
+
+/* .home main article:hover {
+	scale: 0.975;
+	transition: scale 0.2s ease-in-out;
+}
+
+.home main article {
+	transition: scale 0.2s ease-in-out;
+} */
+
+
+
+
+/* //////////////////////////
+	MEDIA QUERIES - GRID AANPASSEN 
+////////////////////////// */
 
 
 @media screen and (min-width: 600px) {
@@ -486,6 +521,7 @@ section:nth-of-type(3) article {
 		font-size: 50px;
 	}
 
+
 }
 
 @media screen and (min-width: 800px) {
@@ -513,7 +549,11 @@ section:nth-of-type(3) article {
 }
 
 
-/* CONTAINTER 1 GROOT EN GROTER*/
+
+
+/* //////////////////////////
+	CONTAINER - GROOT EN GROTER
+////////////////////////// */
 
 section:nth-of-type(3) article:nth-of-type(1) p:nth-last-of-type(1) {
 	font-size: 30px;
@@ -548,7 +588,9 @@ section:nth-of-type(3) article:nth-of-type(1) sub {
 	font-size: xx-small
 }
 
-/* CONTAINTER 2 BATTERIJ */
+/* //////////////////////////
+	CONTAINER 2 - BATTERIJ
+////////////////////////// */
 
 section:nth-of-type(3) article:nth-of-type(2) {
 	padding-left: 2em;
@@ -574,7 +616,9 @@ section:nth-of-type(3) article:nth-of-type(2) sub {
 	font-weight: bolder;
 }
 
-/* CONTAINTER 3 CERAMIC SHIELD */
+/* //////////////////////////
+	CONTAINER 3 - CERAMIC SHIELD
+////////////////////////// */
 
 section:nth-of-type(3) article:nth-of-type(3) p:nth-last-of-type(1) {
 	font-size: 32px;
@@ -594,7 +638,9 @@ section:nth-of-type(3) article:nth-of-type(3) h3 {
 color: var(--h3-kleur);
 } */
 
-/* CONTAINTER 4 WATERBESTENDIG */
+/* //////////////////////////
+	CONTAINER 4 - WATER BESTENDIG
+////////////////////////// */
 
 section:nth-of-type(3) article:nth-of-type(4) {
 	background-image: url("../images/achtergronden/water.png");
@@ -621,21 +667,25 @@ section:nth-of-type(3) article:nth-of-type(4) {
 	animation-timing-function: ease-in-out;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
-	}
-	
-	@keyframes waterbestendig {
-		0, 100% {
-			background-size: 200%;
-			background-position: 0% 200%;
-		}
+}
 
-		50% {
-			background-position: 0% -200%;
-			background-size: 190%;
-		}
+@keyframes waterbestendig {
+
+	0,
+	100% {
+		background-size: 200%;
+		background-position: 0% 200%;
 	}
 
-/* CONTAINTER 5 ACTIEMODUS */
+	50% {
+		background-position: 0% -200%;
+		background-size: 190%;
+	}
+}
+
+/* //////////////////////////
+	CONTAINER 5 - ACTIE MODUS
+////////////////////////// */
 
 section:nth-of-type(3) article:nth-of-type(5) h3 {
 	margin-top: 1.5em;
@@ -652,7 +702,9 @@ section:nth-of-type(3) article:nth-of-type(5) img {
 	scale: auto;
 }
 
-/* CONTAINTER 6 CAMERA */
+/* //////////////////////////
+	CONTAINER 6 - CAMERA
+////////////////////////// */
 
 section:nth-of-type(3) article:nth-of-type(6) {
 	background-image: url("../images/Geel/camera.png");
@@ -667,7 +719,9 @@ section:nth-of-type(3) article:nth-of-type(6) h3 {
 	margin-bottom: 1em;
 }
 
-/* CONTAINTER 7 CAMERA */
+/* //////////////////////////
+	CONTAINER 7 - CHIP
+////////////////////////// */
 
 section:nth-of-type(3) article:nth-of-type(7) {
 	background-image: url("../images/Geel/chip.png");
@@ -682,7 +736,9 @@ section:nth-of-type(3) article:nth-of-type(7) h3 {
 	margin-bottom: 1em;
 }
 
-/* CONTAINTER 8 SOS */
+/* //////////////////////////
+	CONTAINER 8 - SOS
+////////////////////////// */
 
 section:nth-of-type(3) article:nth-of-type(8) {
 	background-image: url("../images/achtergronden/sos.jpg");
@@ -703,7 +759,9 @@ section:nth-of-type(3) article:nth-of-type(8) h3 {
 	color: white;
 }
 
-/* CONTAINTER 9 ONGELUK */
+/* //////////////////////////
+	CONTAINER 9 - ONGELUK
+////////////////////////// */
 
 section:nth-of-type(3) article:nth-of-type(9) {
 	background-repeat: no-repeat;
@@ -723,21 +781,38 @@ section:nth-of-type(3) article:nth-of-type(9) img:hover {
 	animation-timing-function: ease-in-out;
 	animation-direction: alternate;
 	animation-fill-mode: forwards;
+}
+
+@keyframes ongeluk {
+	30% {
+		transform: scale(0.8);
 	}
-	
-	@keyframes ongeluk {
-		30% { transform: scale(0.8); }
-		40%, 60% { transform: rotate(-20deg) scale(0.8); }
-		50% { transform: rotate(20deg) scale(0.8); }
-		70% { transform: rotate(0deg) scale(0.8); }
-		100% { transform: scale(1); }
+
+	40%,
+	60% {
+		transform: rotate(-20deg) scale(0.8);
 	}
+
+	50% {
+		transform: rotate(20deg) scale(0.8);
+	}
+
+	70% {
+		transform: rotate(0deg) scale(0.8);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
 
 section:nth-of-type(3) article:nth-of-type(9) img {
 	scale: 130%;
 }
 
-/* CONTAINTER 10 5G */
+/* //////////////////////////
+	CONTAINER 10 - CONNECTIES
+////////////////////////// */
 
 section:nth-of-type(3) article:nth-of-type(10) {
 	background-repeat: no-repeat;
@@ -765,17 +840,33 @@ section:nth-of-type(3) article:nth-of-type(10) img:hover {
 	animation-direction: alternate;
 	animation-fill-mode: forwards;
 	transform-origin: top center;
-	}
-	
-	@keyframes vijfg {
-		20% { transform: rotate(15deg); }	
-		40% { transform: rotate(-10deg); }
-		60% { transform: rotate(5deg); }	
-		80% { transform: rotate(-5deg); }	
-		100% { transform: rotate(0deg); }
+}
+
+@keyframes vijfg {
+	20% {
+		transform: rotate(15deg);
 	}
 
-/* CONTAINTER 11 SELFIES */
+	40% {
+		transform: rotate(-10deg);
+	}
+
+	60% {
+		transform: rotate(5deg);
+	}
+
+	80% {
+		transform: rotate(-5deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+/* //////////////////////////
+	CONTAINER 11 - SELFIES
+////////////////////////// */
 
 section:nth-of-type(3) article:nth-of-type(11) {
 	background-image: url("../images/Geel/truedepth.jpg");
@@ -792,7 +883,9 @@ section:nth-of-type(3) article:nth-of-type(11) h3 {
 	text-shadow: 0.1em 0.11em 1em black;
 }
 
-/* CONTAINTER 12 PERSONALISEREN */
+/* //////////////////////////
+	CONTAINER 12 - PERSONALISEREN
+////////////////////////// */
 
 section:nth-of-type(3) article:nth-of-type(12) h3 {
 	margin-top: 1.5em;
@@ -809,7 +902,13 @@ section:nth-of-type(3) article:nth-of-type(12) img {
 	margin-bottom: -3.2em;
 }
 
-/* BESPAAR OP IPHONE */
+
+
+
+
+/* //////////////////////////
+	BESPAAR OP IPHONE 
+////////////////////////// */
 
 section:nth-of-type(4) article {
 	background-color: #f5f5f7;
@@ -872,7 +971,13 @@ section:nth-of-type(4) article img {
 	}
 }
 
-/* VERSCHIL MAKEN */
+
+
+
+
+/* //////////////////////////
+	IPHONE MAAKT HET VERSCHIL 
+////////////////////////// */
 
 section:nth-of-type(5) article {
 	background-color: #f5f5f7;
@@ -939,7 +1044,13 @@ main section:nth-of-type(5) article:nth-of-type(3) img:nth-of-type(2) {
 	}
 }
 
-/* FOOTER */
+
+
+
+
+/* //////////////////////////
+	FOOTER 
+////////////////////////// */
 
 footer {
 	background-color: #f5f5f7;
@@ -975,6 +1086,39 @@ footer img {
 	display: none;
 }
 
+/* //////////////////////////
+	LINKS EN BUTTONS 
+////////////////////////// */
+
+a:link {
+	text-decoration: none;
+}
+
+main a:hover {
+	text-decoration: underline #0071e3;
+}
+
+footer a:hover {
+	text-decoration: underline #424245;
+}
+
+a:focus {
+	outline-color: blue;
+	outline-width: 1em;
+}
+
+button:focus {
+	outline-color: blue;
+}
+
+header a:visited {
+	color: black;
+}
+
+/* //////////////////////////
+	MEDIA QUERIE 
+////////////////////////// */
+
 @media screen and (max-width: 800px) {
 
 	footer p {
@@ -1001,61 +1145,76 @@ footer img {
 	}
 }
 
-/* HOME */
 
-.home > main {
+
+
+
+
+
+
+
+
+/* //////////////////////////
+	HOME - BASIS SETTINGS EN GRID 
+////////////////////////// */
+
+.home>main {
 	display: grid;
 	gap: 1em;
 	grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 	grid-auto-flow: dense;
 }
 
-.home > main article h2 {
+.home>main article h2 {
 	text-align: center;
 	font-size: 60px;
 	margin-top: 0.75em;
 }
 
-.home > main article:nth-of-type(6) h2,
-.home > main article:nth-of-type(7) h2,
-.home > main article:nth-of-type(8) > h2 {
+.home>main article:nth-of-type(6) h2,
+.home>main article:nth-of-type(7) h2,
+.home>main article:nth-of-type(8)>h2 {
 	text-align: center;
 	font-size: 40px;
 	margin-top: 1em;
 }
 
-.home > main article p {
+.home>main article p {
 	text-align: center;
 	font-size: 24px;
 }
 
 
-.home > main article:nth-of-type(1) {
+.home>main article:nth-of-type(1) {
 	background-color: black;
 }
 
-.home > main article:nth-of-type(1) > p,
-.home > main article:nth-of-type(1) > h2,
-.home > main article:nth-of-type(3) > p,
-.home > main article:nth-of-type(3) > h2,
-.home > main article:nth-of-type(6) > p,
-.home > main article:nth-of-type(6) > h2   {
+.home>main article:nth-of-type(1)>p,
+.home>main article:nth-of-type(1)>h2,
+.home>main article:nth-of-type(3)>p,
+.home>main article:nth-of-type(3)>h2,
+.home>main article:nth-of-type(6)>p,
+.home>main article:nth-of-type(6)>h2 {
 	color: #e3e3e3;
 }
 
-.home > main div {
+.home>main div {
 	display: flex;
 	justify-content: center;
 	gap: 3em;
 }
 
-.home > main div a p {
+.home>main div a p {
 	font-size: 19px;
 	margin-top: 1em;
-	color:#0071e3;
-	}
+	color: #0071e3;
+}
 
-.home > main article:nth-of-type(1) {
+/* //////////////////////////
+	CONTAINER 1 - IPHONE 15 PRO
+////////////////////////// */
+
+.home>main article:nth-of-type(1) {
 	background-image: url("../images/home/15pro.jpg");
 	background-size: 175em;
 	background-position: 50% 100%;
@@ -1067,9 +1226,11 @@ footer img {
 	transition: background-size 1s ease-in-out;
 }
 
-/* IPHONE 14 CONTAINER */
+/* //////////////////////////
+	CONTAINER 2 - IPHONE 14
+////////////////////////// */
 
-.home > main article:nth-of-type(2) {
+.home>main article:nth-of-type(2) {
 	background-image: url("../images/home/14.jpg");
 	background-size: 250em;
 	background-position: 50% 100%;
@@ -1088,19 +1249,22 @@ footer img {
 	transform-origin: top center;
 }
 
-	
-	@keyframes iphone-zoom {
-		0% { 
-			background-size: 250em;
-		}
-		100% { 
-			background-size: 175em;
-		}
+
+@keyframes iphone-zoom {
+	0% {
+		background-size: 250em;
 	}
 
-	/* WATCH SERIES 9 CONTAINER */
+	100% {
+		background-size: 175em;
+	}
+}
 
-.home > main article:nth-of-type(3) {
+/* //////////////////////////
+	CONTAINER 3 - WATCH SERIES 9
+////////////////////////// */
+
+.home>main article:nth-of-type(3) {
 	background-image: url("../images/home/watch9.jpg");
 	background-size: 175em;
 	background-position: 50% 100%;
@@ -1111,15 +1275,19 @@ footer img {
 	grid-column-end: -1;
 }
 
-.home > main article:nth-of-type(3) img,
-.home > main article:nth-of-type(4) img,
-.home > main article:nth-of-type(5) img,
-.home > main article:nth-of-type(9) img {
-scale: 50%;
-margin-top: 1em;
+.home>main article:nth-of-type(3) img,
+.home>main article:nth-of-type(4) img,
+.home>main article:nth-of-type(5) img,
+.home>main article:nth-of-type(9) img {
+	scale: 50%;
+	margin-top: 1em;
 }
 
-.home > main article:nth-of-type(4) {
+/* //////////////////////////
+	CONTAINER 4 - APPLE WATCH ULTRA
+////////////////////////// */
+
+.home>main article:nth-of-type(4) {
 	background-image: url("../images/home/ultra.jpg");
 	background-size: 90em;
 	background-position: 50% 100%;
@@ -1128,7 +1296,11 @@ margin-top: 1em;
 	position: relative;
 }
 
-.home > main article:nth-of-type(5) {
+/* //////////////////////////
+	CONTAINER 5 - CARBON NEUTRAL
+////////////////////////// */
+
+.home>main article:nth-of-type(5) {
 	background-image: url("../images/home/carbon.jpg");
 	background-size: 75em;
 	background-position: 50% 100%;
@@ -1139,7 +1311,11 @@ margin-top: 1em;
 	background-color: #FBFBFD;
 }
 
-.home > main article:nth-of-type(6) {
+/* //////////////////////////
+	CONTAINER 6 - AIRPODS PRO
+////////////////////////// */
+
+.home>main article:nth-of-type(6) {
 	background-image: url("../images/home/airpods.jpg");
 	background-size: 75em;
 	background-position: 50% 100%;
@@ -1150,7 +1326,11 @@ margin-top: 1em;
 	background-color: black;
 }
 
-.home > main article:nth-of-type(7) {
+/* //////////////////////////
+	CONTAINER 7 - STUDENTENKORTING
+////////////////////////// */
+
+.home>main article:nth-of-type(7) {
 	background-image: url("../images/home/studie.jpg");
 	background-size: 75em;
 	background-position: 50% 100%;
@@ -1161,7 +1341,11 @@ margin-top: 1em;
 	background-color: #F2F2F4;
 }
 
-.home > main article:nth-of-type(8) {
+/* //////////////////////////
+	CONTAINER 8 - MACBOOK AIR
+////////////////////////// */
+
+.home>main article:nth-of-type(8) {
 	background-image: url("../images/home/macbook.jpg");
 	background-size: 75em;
 	background-position: 50% 75%;
@@ -1172,7 +1356,11 @@ margin-top: 1em;
 	background-color: #FBFBFD;
 }
 
-.home > main article:nth-of-type(9) {
+/* //////////////////////////
+	CONTAINER 9 - TRADE IN
+////////////////////////// */
+
+.home>main article:nth-of-type(9) {
 	background-image: url("../images/home/trade_2.jpg");
 	background-size: 75em;
 	background-position: 50% 75%;
@@ -1184,27 +1372,131 @@ margin-top: 1em;
 
 }
 
+
+/* //////////////////////////
+	MEDIA QUERIES 
+////////////////////////// */
+
 @media screen and (max-width: 800px) {
 
-	.home > main article:nth-of-type(1) {
+	.home>main article:nth-of-type(1) {
 		background-size: 100em;
 		background-position: 50% 50%;
 	}
 
-	.home > main article p {
+	.home>main article p {
 		font-size: 19px;
 	}
 
-	.home > main article h2 {
+	.home>main article h2 {
 		font-size: 30px;
 	}
 
-	.home > main article h2 {
+	.home>main article h2 {
 		margin-top: 2em;
 	}
 
-	.home > main {
+	.home>main {
 		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	}
 }
 
+
+/* //////////////////////////
+	VERMINDER BEWEGING
+////////////////////////// */
+
+@media (prefers-reduced-motion) {
+	section:nth-of-type(3) article:nth-of-type(10) img:hover {
+		animation-duration: 7s;
+	}
+
+	section:nth-of-type(3) article:nth-of-type(9) img:hover,
+	section:nth-of-type(3) article:nth-of-type(4) {
+		animation-play-state: paused;
+	}
+
+	main section:nth-of-type(1) article,
+	.home>main article:nth-of-type(1) {
+		transition: none;
+	}
+
+	.home>main article:nth-of-type(2) {
+		animation-play-state: paused;
+		background-size: 175em;
+	}
+
+	section:nth-of-type(3) article:hover,
+	section:nth-of-type(4) article:hover,
+	section:nth-of-type(5) article:hover  {
+		scale: 1;
+		transition: none;
+	}
+
+	.home main article:hover {
+		scale: 1;
+		transition: none;
+	}
+}
+
+
+@media (prefers-color-scheme:dark) {
+	header {
+		backdrop-filter: blur(5em);
+	}
+
+	h2,
+	main>section:first-of-type p {
+		color: white;
+	}
+
+	footer {
+		background-color: rgb(35, 35, 35);
+	}
+
+	footer p,
+	footer h3 {
+		color: rgb(227, 227, 227);
+	}
+
+	footer a:hover {
+		text-decoration: underline rgb(227, 227, 227);
+	}
+
+	body {
+		background-color: black;
+	}
+
+	.home header nav {
+		background-color: black;
+	}
+
+	header nav p {
+		color: #e3e3e3;
+	}
+
+	header nav section img {
+		filter: brightness(0) invert(1);
+	}
+
+	nav:nth-of-type(2) a p {
+		color: white;
+		background-color: #0071e3;
+	}
+
+	main>div:first-of-type {
+		background-color: rgb(35, 35, 35);
+	}
+
+	main>div:first-of-type p {
+		color: white;
+	}
+
+	.home>main article:nth-of-type(7)>h2,
+	.home>main article:nth-of-type(8)>h2,
+	.home>main article:nth-of-type(2)>h2 {
+		color: black;
+	}
+
+
+}
