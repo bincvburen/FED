@@ -8,6 +8,8 @@ var blauw = document.querySelector("#blauw")
 var paars = document.querySelector("#paars")
 var geel = document.querySelector("#geel")
 
+var koop = document.querySelector("#koop_ip")
+
 var frontIP = document.querySelector("#frontIP")
 var ceramic = document.querySelector("#ceramic")
 var vijf_g = document.querySelector("#vijf_g")
@@ -125,12 +127,54 @@ geel.addEventListener("click", function () {
 
 });
 
-// if (window.matchMedia('screen and (min-width:1500px)').matches) {
-//     document.getElementById("achtergrond_ip").style.backgroundPosition="0% 0%"; 
-//     document.getElementById("achtergrond_ip").style.backgroundSize="100%"; 
-// }
+sterrenlicht.addEventListener("click", function () {
+    document.getElementById("koop").innerHTML   
+    = "Sterrenlicht";   
+    document.documentElement.style.setProperty('--h3-kleur', 'var(--ip-sterrenlicht)');
+    document.documentElement.style.setProperty('--h3-kleur-donker', 'var(--ip-sterrenlicht-donker)');
+    frontIP.src = "./images/Sterrenlicht/ip1.jpg";
+    ceramic.src = "./images/Sterrenlicht/ceramic.jpg";
+    vijf_g.src = "./images/Sterrenlicht/5g.jpg";
+    personaliseer.src = "./images/Sterrenlicht/personaliseer.jpg";
+    ongeluk.src = "./images/Sterrenlicht/ongeluk.jpg";
+
+    if (window.matchMedia('screen and (max-width:600px)').matches) {
+        document.getElementById("achtergrond_ip").style.backgroundPosition="20% 10%"; 
+    }
+
+});
+
+document.getElementById("draaien").onmouseover = function() {mouseOver()};
+document.getElementById("draaien").onmouseout = function() {mouseOut()};
+
+function draai_afb() {
+    
+    var rotator = document.getElementById('personaliseer');  
+    var imageDir = './images/Rotator/';                                                   
+
+    var images = ['p1.jpg', 'p2.jpg', 'p3.jpg', 'p4.jpg', 'p5.jpg', 'p6.jpg'];
+
+    var num = 0;
+    var changeImage = function() {
+        rotator.src = imageDir + images[num++];
+        if (num == 6) {
+            num = 5;
+            clearInterval(changeImage);
+        }
+    };
+   
+setInterval(changeImage, 1000);
+};
 
 
+
+function mouseOver() {
+    draai_afb();
+  }
+
+  function mouseout() {
+    var num = 5;
+  }
 
 
 

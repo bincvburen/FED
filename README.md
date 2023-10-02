@@ -70,7 +70,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown.png" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
@@ -88,26 +88,11 @@ Tot nu toe gaat het me best goed af met coderen. Ik moest het een en ander even 
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-Binc
-
-Jan
-
-Sara
-
-Yasin
-
-Esra
+Tijdens de meeting zullen we het gaan hebben over de dingen waar we momenteel tegen aan lopen.
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+Tijdens de meeting zijn we ingegaan op diverse onderdelen als Grid en Flexbox en hebben we elkaar geholpen waar nodig.
 
 </details>
 
@@ -121,27 +106,13 @@ Esra
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Deze week gaat het ook goed met coderen, en zit de flow er lekker in. Ik heb het Grid door en ben ook bezig met de Media Queries om de website responisve te maken! Onder andere de navigatie balk en footer ben ik nu responsive aan het maken.
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+Tijdens de meeting zullen we het gaan hebben over de dingen waar we momenteel tegen aan lopen en wat goed gaat!
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
+Tijdens dit gesprek heb ik een aantal tips gekregen om mijn website nog beter te maken. Het ging andere andere over de website interactiever maken, hover effecten toevoegen, dark mode overwgeen en focus state toevoegen aan de website.
 </details>
 
 
@@ -154,7 +125,7 @@ Esra
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+Tijdens de toegankelijkheids test kwamen we tot een aantal verbeteringen en een aantal dingen die ik nog moet verbeteren. Wat ik beter heb dan de ogirinele website is de mogelijkheid voor reduces motion, reduces transparency en dark mode. Een aantal aandachtspunten zijn: h1 toevoegen aan alle pagina's, de navigatie omzetten tot een UL, invisible headers toevoegen voor de screen reader op plekken waar alleen afbeeldingen te vinden zijn.
 
 </details>
 
@@ -168,26 +139,14 @@ Esra
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+De website is bijna af en de meeste dingen heb ik tot nu toe uitgewerkt. 
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+Tijdens deze meeting hebben we het over de laatste puntjes op de i.
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+Tijdens deze meesting hebben we het gehad over kleine dingen die ik nog kan toevoegen, zoals leuke effecten. De website is namelijk bijna zo goed als af!
 
 </details>
 

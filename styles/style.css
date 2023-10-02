@@ -35,6 +35,10 @@
 
 	--h3-kleur: var(--ip-geel);
 	--h3-kleur-donker: var(--ip-geel-donker);
+
+	--h2-kleur: black;
+	--footer-h3: #1d1d1f;
+	--footer-p: #424245;
 }
 
 
@@ -67,6 +71,7 @@ h1 {
 h2 {
 	font-family: 'Display';
 	font-size: 32px;
+	color: var(--h2-kleur)
 }
 
 h3 {
@@ -74,6 +79,11 @@ h3 {
 	font-size: 17px;
 	color: #86868b;
 	text-align: center;
+}
+
+li {
+	font-family: 'Regular';
+	font-size: 12px;
 }
 
 /* //////////////////////////
@@ -84,7 +94,7 @@ h3 {
 	position: relative;
 } */
 
-header>nav:nth-of-type(1) section {
+header>nav:nth-of-type(1) ul {
 	justify-content: space-between;
 }
 
@@ -92,29 +102,19 @@ header>nav:nth-of-type(2) {
 	justify-content: space-between;
 }
 
-header nav:nth-of-type(2) {
+header nav:nth-of-type(2),
+header nav:nth-of-type(2) section:nth-of-type(2) {
 	display: flex;
 }
 
-nav section {
+nav ul,
+nav:nth-of-type(2) {
 	display: flex;
 	padding: 16px;
 }
 
-nav section:first-of-type p {
-	margin-top: 0.3em;
-}
-
-nav:nth-of-type(1) section:nth-of-type(2) {
-	gap: 1em;
-}
-
-nav:nth-of-type(1) section:nth-of-type(3) {
-	gap: 2em;
-}
-
 nav:nth-of-type(2) section:nth-of-type(2) {
-	gap: 2em;
+	gap: 1em;
 }
 
 nav:nth-of-type(2) {
@@ -129,10 +129,17 @@ nav section:first-of-type {
 	justify-content: flex-start;
 }
 
-nav section:nth-of-type(2),
-nav section:nth-of-type(3) {
-	justify-content: flex-end;
-	/* margin-left: 2em; */
+nav ul li:nth-of-type(2),
+nav ul li:nth-of-type(3),
+nav ul li:nth-of-type(4),
+nav ul li:nth-of-type(5),
+nav ul li:nth-of-type(6),
+nav ul li:nth-of-type(7),
+nav ul li:nth-of-type(8),
+nav ul li:nth-of-type(9),
+nav ul li:nth-of-type(10),
+nav ul li:nth-of-type(11) {
+	margin-top: 0.3em;
 }
 
 img {
@@ -140,7 +147,7 @@ img {
 	align-self: center;
 }
 
-nav section img:nth-of-type(4) {
+nav ul li:last-of-type img {
 	transform: rotate(90deg);
 }
 
@@ -163,15 +170,15 @@ header {
 	background-color: black;
 }
 
-.home header nav p {
+.home header nav li a {
 	color: #e3e3e3;
 }
 
-.home header nav section img {
+.home header nav ul img {
 	filter: brightness(0) invert(1);
 }
 
-nav:nth-of-type(2) a p {
+nav:nth-of-type(2) a button {
 	color: white;
 	background-color: #0071e3;
 	padding-left: 10px;
@@ -184,6 +191,15 @@ nav:nth-of-type(2) a p {
 	border-style: solid;
 	font-family: 'Regular';
 	font-size: 12px;
+	transition: background-color 0.15s ease-in-out;
+	transition: padding 0.15s ease-in-out;
+}
+
+nav:nth-of-type(2) a button:hover {
+	background-color: var(--h3-kleur-donker);
+	padding: 3px 7em;
+	transition: background-color 0.3s ease-in-out;
+	transition: padding 0.3s ease-in-out;
 }
 
 main>div:first-of-type {
@@ -196,26 +212,35 @@ main>div:first-of-type {
 
 @media screen and (max-width: 1200px) {
 
-	nav section:first-of-type p {
+	nav ul li:nth-of-type(2),
+	nav ul li:nth-of-type(3),
+	nav ul li:nth-of-type(4),
+	nav ul li:nth-of-type(5),
+	nav ul li:nth-of-type(6),
+	nav ul li:nth-of-type(7),
+	nav ul li:nth-of-type(8),
+	nav ul li:nth-of-type(9),
+	nav ul li:nth-of-type(10),
+	nav ul li:nth-of-type(11) {
 		display: none;
 	}
 
-	nav section:first-of-type img:nth-of-type(2),
-	nav section:first-of-type img:nth-of-type(3),
-	nav section:first-of-type img:nth-of-type(4) {
+	nav ul li:nth-of-type(12),
+	nav ul li:nth-of-type(13),
+	nav ul li:nth-of-type(14) {
 		justify-content: flex-end;
 		margin: 0em 1em;
 	}
 
 
-	nav section:first-of-type img:nth-of-type(2) {
+	nav ul li:nth-of-type(12) {
 		margin-left: auto;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 
-	nav section img:nth-last-of-type(1) {
+	nav ul li:last-of-type {
 		display: none;
 	}
 
@@ -394,6 +419,12 @@ main section:nth-of-type(1) nav button:nth-of-type(6):hover {
 /* //////////////////////////
 	KOOP IPHONE 
 ////////////////////////// */
+main>section:nth-of-type(2) {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
 section:nth-of-type(2) h2 {
 	text-align: center;
@@ -403,11 +434,11 @@ section:nth-of-type(2) h2 {
 	margin-bottom: 0.5em;
 }
 
-main>section:nth-of-type(2) a p {
+main>section:nth-of-type(2) a button {
 	color: white;
 	background-color: #0071e3;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 2em;
+	padding-right: 2em;
 	padding-top: 7px;
 	padding-bottom: 7px;
 	margin-top: 1em;
@@ -417,9 +448,16 @@ main>section:nth-of-type(2) a p {
 	border-style: solid;
 	font-family: 'Regular';
 	font-size: 17px;
-	margin-left: 40%;
-	margin-right: 40%;
-	margin-bottom: 3em;
+	margin-bottom: 2em;
+	transition: background-color 0.15s ease-in-out;
+	transition: padding 0.15s ease-in-out;
+}
+
+main>section:nth-of-type(2) a button:hover {
+	background-color: var(--h3-kleur-donker);
+	padding: 7px 7em;
+	transition: background-color 0.3s ease-in-out;
+	transition: padding 0.3s ease-in-out;
 }
 
 /* //////////////////////////
@@ -457,14 +495,6 @@ section:nth-of-type(5) article {
 	transition: scale 0.2s ease-in-out;
 }
 
-/* .home main article:hover {
-	scale: 0.975;
-	transition: scale 0.2s ease-in-out;
-}
-
-.home main article {
-	transition: scale 0.2s ease-in-out;
-} */
 
 
 
@@ -496,7 +526,8 @@ section:nth-of-type(5) article {
 		background-position: 30% 0%;
 	}
 
-	nav section {
+	nav ul,
+	nav:nth-of-type(2) {
 		padding-right: 10%;
 		padding-left: 10%;
 	}
@@ -607,6 +638,7 @@ section:nth-of-type(3) article:nth-of-type(2) p:nth-last-of-type(1) {
 	font-size: 32px;
 	background-image: radial-gradient(#333336 5%, #81be2c 30%, #81be2c 10%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -634,9 +666,17 @@ section:nth-of-type(3) article:nth-of-type(3) h3 {
 	margin-bottom: 0.5em;
 }
 
-/* section:nth-of-type(3) article:nth-of-type(3) p {
-color: var(--h3-kleur);
-} */
+section:nth-of-type(3) article:nth-of-type(3) p:hover {
+	color: var(--h3-kleur-donker);
+	transition: color 0.5s ease-in-out;
+}
+
+section:nth-of-type(3) article:nth-of-type(3) p {
+	color: black;
+	transition: color 0.5s ease-in-out;
+}
+
+
 
 /* //////////////////////////
 	CONTAINER 4 - WATER BESTENDIG
@@ -651,6 +691,7 @@ section:nth-of-type(3) article:nth-of-type(4) h3 {
 	font-size: 32px;
 	background-image: radial-gradient(var(--h3-kleur) 5%, var(--h3-kleur-donker) 30%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-top: 4em;
 }
@@ -671,7 +712,7 @@ section:nth-of-type(3) article:nth-of-type(4) {
 
 @keyframes waterbestendig {
 
-	0,
+	0%,
 	100% {
 		background-size: 200%;
 		background-position: 0% 200%;
@@ -683,8 +724,9 @@ section:nth-of-type(3) article:nth-of-type(4) {
 	}
 }
 
+
 /* //////////////////////////
-	CONTAINER 5 - ACTIE MODUS
+	CONTAINER 5 - ACTION MODE
 ////////////////////////// */
 
 section:nth-of-type(3) article:nth-of-type(5) h3 {
@@ -695,12 +737,48 @@ section:nth-of-type(3) article:nth-of-type(5) p {
 	font-size: 27px;
 	margin-top: 0.2em;
 	margin-bottom: 1em;
-	/* color: var(--h3-kleur); */
 }
 
 section:nth-of-type(3) article:nth-of-type(5) img {
 	scale: auto;
 }
+
+section:nth-of-type(3) article:nth-of-type(5) img:hover {
+	animation: shake 2s ease infinite;
+	animation-direction: alternate;
+	animation-iteration-count: initial;
+}
+
+section:nth-of-type(3) article:nth-of-type(5) p:hover {
+	animation: shake 2s ease infinite;
+	animation-direction: alternate;
+	animation-iteration-count: initial;
+}
+
+
+@keyframes shake {
+
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
+}
+
 
 /* //////////////////////////
 	CONTAINER 6 - CAMERA
@@ -783,6 +861,10 @@ section:nth-of-type(3) article:nth-of-type(9) img:hover {
 	animation-fill-mode: forwards;
 }
 
+section:nth-of-type(3) article:nth-of-type(9) h3 {
+	display: none;
+}
+
 @keyframes ongeluk {
 	30% {
 		transform: scale(0.8);
@@ -828,8 +910,9 @@ section:nth-of-type(3) article:nth-of-type(10) {
 
 section:nth-of-type(3) article:nth-of-type(10) h3 {
 	font-size: 32px;
-	background-image: radial-gradient(var(--h3-kleur) 5%, var(--h3-kleur-donker) 30%);
+	background-image: radial-gradient(var(--h3-kleur) -25%, var(--h3-kleur-donker) 30%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -878,7 +961,7 @@ section:nth-of-type(3) article:nth-of-type(11) {
 section:nth-of-type(3) article:nth-of-type(11) h3 {
 	font-size: 32px;
 	color: white;
-	margin-top: 10em;
+	margin-top: 100%;
 	margin-bottom: 1em;
 	text-shadow: 0.1em 0.11em 1em black;
 }
@@ -886,6 +969,12 @@ section:nth-of-type(3) article:nth-of-type(11) h3 {
 /* //////////////////////////
 	CONTAINER 12 - PERSONALISEREN
 ////////////////////////// */
+
+section:nth-of-type(3) article:nth-of-type(12) {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
 section:nth-of-type(3) article:nth-of-type(12) h3 {
 	margin-top: 1.5em;
@@ -899,7 +988,9 @@ section:nth-of-type(3) article:nth-of-type(12) p {
 }
 
 section:nth-of-type(3) article:nth-of-type(12) img {
-	margin-bottom: -3.2em;
+	padding-bottom: unset;
+	margin-bottom: -2.3em;
+
 }
 
 
@@ -961,14 +1052,17 @@ section:nth-of-type(4) article img {
 		background-size: 100%;
 	}
 
-	main>section:nth-of-type(4) article h3 {
-		color: green;
-	}
-
 	main>section:nth-of-type(4)>h2,
 	main>section:nth-of-type(5)>h2 {
 		font-size: 56px;
 	}
+}
+
+strong {
+	background-image: radial-gradient(var(--h3-kleur) -75%, var(--h3-kleur-donker) 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 
@@ -1014,6 +1108,27 @@ main section:nth-of-type(5) article:first-of-type img:nth-of-type(2) {
 	width: 75%;
 	margin-bottom: 2em;
 	padding: 1em;
+}
+
+main section:nth-of-type(5) article:first-of-type img:nth-of-type(2):hover {
+
+	animation: wereldbol;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+@keyframes wereldbol {
+
+	50% {
+		transform: rotate(0.5turn);
+		scale: 0.8;
+	}
+
+	100% {
+		transform: rotate(1turn);
+		scale: 1;
+	}
 }
 
 main section:nth-of-type(5) article:nth-of-type(2) img:nth-of-type(2) {
@@ -1067,16 +1182,14 @@ footer>section {
 	margin: auto;
 }
 
-footer>section section {}
-
 footer h3 {
-	color: #1d1d1f;
+	color: var(--footer-h3);
 	font-size: 12px;
 	text-align: left;
 }
 
 footer p {
-	color: #424245;
+	color: var(--footer-p);
 	font-size: 12px;
 	text-align: left;
 	margin: 0.7em 0em;
@@ -1210,6 +1323,22 @@ header a:visited {
 	color: #0071e3;
 }
 
+.home main>h1 {
+	display: none;
+}
+
+.home span {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	top: 0.15em;
+	transform: rotate(45deg);
+	vertical-align: middle;
+	width: 0.45em;
+}
+
 /* //////////////////////////
 	CONTAINER 1 - IPHONE 15 PRO
 ////////////////////////// */
@@ -1217,13 +1346,25 @@ header a:visited {
 .home>main article:nth-of-type(1) {
 	background-image: url("../images/home/15pro.jpg");
 	background-size: 175em;
-	background-position: 50% 100%;
+	background-position: 50% 0%;
 	height: 40em;
 	background-repeat: no-repeat;
 	position: relative;
 	grid-column-start: 1;
 	grid-column-end: -1;
 	transition: background-size 1s ease-in-out;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.home>main article {
+	transition: transform 0.5s ease-in-out;
+}
+
+.home>main article:nth-of-type(1):hover {
+	transform: rotate(180deg);
+	transition: transform 1s ease-in-out;
+	transition-delay: 4s;
 }
 
 /* //////////////////////////
@@ -1283,6 +1424,12 @@ header a:visited {
 	margin-top: 1em;
 }
 
+.home>main article:nth-of-type(3):hover {
+	transform: skew(10deg, 10deg);
+	transition: transform 1s ease-in-out;
+	transition-delay: 2s;
+}
+
 /* //////////////////////////
 	CONTAINER 4 - APPLE WATCH ULTRA
 ////////////////////////// */
@@ -1295,6 +1442,13 @@ header a:visited {
 	background-repeat: no-repeat;
 	position: relative;
 }
+
+.home>main article:nth-of-type(4):hover {
+	transform: rotate(180deg);
+	transition: transform 1s ease-in-out;
+	transition-delay: 2s;
+}
+
 
 /* //////////////////////////
 	CONTAINER 5 - CARBON NEUTRAL
@@ -1341,6 +1495,12 @@ header a:visited {
 	background-color: #F2F2F4;
 }
 
+.home>main article:nth-of-type(7):hover {
+	transform: scale(1.3);
+	transition: transform 1s ease-in-out;
+	transition-delay: 2s;
+}
+
 /* //////////////////////////
 	CONTAINER 8 - MACBOOK AIR
 ////////////////////////// */
@@ -1381,7 +1541,7 @@ header a:visited {
 
 	.home>main article:nth-of-type(1) {
 		background-size: 100em;
-		background-position: 50% 50%;
+		background-position: 50% 30%;
 	}
 
 	.home>main article p {
@@ -1412,7 +1572,10 @@ header a:visited {
 	}
 
 	section:nth-of-type(3) article:nth-of-type(9) img:hover,
-	section:nth-of-type(3) article:nth-of-type(4) {
+	section:nth-of-type(3) article:nth-of-type(4),
+	section:nth-of-type(3) article:nth-of-type(5) p:hover,
+	section:nth-of-type(3) article:nth-of-type(5) img:hover,
+	main section:nth-of-type(5) article:first-of-type img:nth-of-type(2):hover {
 		animation-play-state: paused;
 	}
 
@@ -1421,6 +1584,16 @@ header a:visited {
 		transition: none;
 	}
 
+	.home>main article:nth-of-type(1):hover,
+	.home>main article:nth-of-type(2):hover,
+	.home>main article:nth-of-type(3):hover,
+	.home>main article:nth-of-type(4):hover,
+	.home>main article:nth-of-type(7):hover {
+		transition: none;
+		transform: unset;
+	}
+
+
 	.home>main article:nth-of-type(2) {
 		animation-play-state: paused;
 		background-size: 175em;
@@ -1428,7 +1601,7 @@ header a:visited {
 
 	section:nth-of-type(3) article:hover,
 	section:nth-of-type(4) article:hover,
-	section:nth-of-type(5) article:hover  {
+	section:nth-of-type(5) article:hover {
 		scale: 1;
 		transition: none;
 	}
@@ -1441,22 +1614,15 @@ header a:visited {
 
 
 @media (prefers-color-scheme:dark) {
-	header {
-		backdrop-filter: blur(5em);
-	}
 
-	h2,
-	main>section:first-of-type p {
-		color: white;
+	:root {
+		--h2-kleur: white;
+		--footer-h3: rgb(227, 227, 227);
+		--footer-p: rgb(227, 227, 227);
 	}
 
 	footer {
 		background-color: rgb(35, 35, 35);
-	}
-
-	footer p,
-	footer h3 {
-		color: rgb(227, 227, 227);
 	}
 
 	footer a:hover {
@@ -1467,14 +1633,15 @@ header a:visited {
 		background-color: black;
 	}
 
-	.home header nav {
-		background-color: black;
-	}
-
-	header nav p {
+	header nav li a {
 		color: #e3e3e3;
 	}
 
+	header a:visited {
+		color: #e3e3e3;
+	}
+
+	header nav ul li img,
 	header nav section img {
 		filter: brightness(0) invert(1);
 	}
@@ -1497,6 +1664,4 @@ header a:visited {
 	.home>main article:nth-of-type(2)>h2 {
 		color: black;
 	}
-
-
 }
