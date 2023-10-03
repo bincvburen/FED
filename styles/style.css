@@ -153,6 +153,7 @@ header {
 	top: -3em;
 	z-index: 2;
 	backdrop-filter: blur(1em);
+	-webkit-backdrop-filter: blur(1em);
 }
 
 .home header {
