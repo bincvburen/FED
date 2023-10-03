@@ -160,19 +160,19 @@ Tijdens deze meesting hebben we het gehad over kleine dingen die ik nog kan toev
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/1.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+Deze opdracht heeft mij heel veel geleerd! Van grid, tot responsive en van animaties tot aan toegankelijkheid. Allemaal nieuwe dingen die ik geleerd heb tijdens dit vak. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/4.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+Ik struggelde hier en daar af en toe met uitlijning van bepaalde elementen. Ik vond vaak felxbox een beetje apart werken, en moest het soms 10x proberen voordat iets lukte. Het is veel proberen en proberen totdat het lukt. Ook met Javascript zat ik soms een beetje te knoeien, maar uiteindelijk is het allemaal gelukt!
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/2.png" width="375px" alt="bummer">
 </details>
 
 
@@ -184,12 +184,18 @@ Tijdens deze meesting hebben we het gehad over kleine dingen die ik nog kan toev
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
-
+https://www.w3schools.com/cssref/pr_grid-row-start.php
+https://www.w3schools.com/cssref/css3_pr_transform.php
+https://www.w3schools.com/jsref/prop_style_backgroundimage.asp
+https://www.w3schools.com/cssref/css3_pr_align-self.php
+https://www.w3schools.com/cssref/css3_pr_text-shadow.php
+https://www.w3schools.com/cssref/pr_grid-column-start.php
+https://www.w3schools.com/css/css3_transitions.asp
+https://www.w3schools.com/cssref/css3_pr_backdrop-filter.php
+https://www.w3schools.com/css/css3_flexbox_responsive.asp
+https://www.w3schools.com/jsref/prop_style_backgroundposition.asp
+https://www.w3schools.com/cssref/css3_pr_animation.php
+https://www.w3schools.com/css/css_border.asp
+https://stackoverflow.com/questions/29516971/how-do-i-cycle-through-pictures-in-javascript
+https://www.w3schools.com/jsref/dom_obj_pushbutton.asp
 </details>
