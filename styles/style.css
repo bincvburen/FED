@@ -1012,10 +1012,12 @@ a:link {
 
 main a:hover {
 	text-decoration: underline #0071e3;
+	-webkit-text-decoration: underline #0071e3;
 }
 
 footer a:hover {
 	text-decoration: underline #424245;
+	-webkit-text-decoration: underline #424245;
 }
 
 a:focus {
